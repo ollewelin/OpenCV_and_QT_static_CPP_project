@@ -111,5 +111,12 @@ Example terminal view after cmake command
     -- Configuring done
     -- Generating done
     -- Build files have been written to: /home/olle/opencv/opencv/build
-    olle@olle-TUF-Gaming-FX505DT-FX505DT:~/opencv/opencv/build$ 
+    ~/opencv/opencv/build$ 
+    
+## Compile OpenCV    
+    ~/opencv/opencv/build$ make
+    
+    
+
+
 
