@@ -30,6 +30,8 @@ Possible to call
 
 The 'opencv_contrib' repository contains additional modules and functionality that are not part of the main OpenCV distribution. The 'cudev' module provides CUDA-specific functionality for OpenCV.
 
+    opencv/build$
+
     git clone https://github.com/opencv/opencv_contrib.git
 
 cmake command
