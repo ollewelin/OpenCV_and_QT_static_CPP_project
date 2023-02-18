@@ -75,3 +75,36 @@ cmake command
           -D OPENCV_EXTRA_MODULES_PATH=../opencv_contrib/modules \
           -D OPENCV_ENABLE_NONFREE=ON \
           ..
+          
+          
+Example terminal view after cmake command
+    ...
+    ...
+    
+    -- 
+    --   NVIDIA CUDA:                   YES (ver 10.2, CUFFT CUBLAS)
+    --     NVIDIA GPU arch:             75
+    --     NVIDIA PTX archs:            75
+    -- 
+    --   cuDNN:                         YES (ver 8.3.0)
+    -- 
+    --   OpenCL:                        YES (no extra features)
+    --     Include path:                /home/olle/opencv/opencv/3rdparty/include/opencl/1.2
+    --     Link libraries:              Dynamic load
+    -- 
+    --   Python (for build):            /usr/bin/python2.7
+    -- 
+    --   Java:                          
+    --     ant:                         NO
+    --     JNI:                         NO
+    --     Java wrappers:               NO
+    --     Java tests:                  NO
+    -- 
+    --   Install to:                    /usr/local
+    -- -----------------------------------------------------------------
+    -- 
+    -- Configuring done
+    -- Generating done
+    -- Build files have been written to: /home/olle/opencv/opencv/build
+    olle@olle-TUF-Gaming-FX505DT-FX505DT:~/opencv/opencv/build$ 
+
