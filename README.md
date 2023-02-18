@@ -43,6 +43,9 @@ I have NVIDIA GeForce GTX 1650 graphics card is based on the Turing architecture
 
 CUDA_ARCH_BIN=7.5
 
+Find you architecture at
+https://developer.nvidia.com/cuda-gpus
+
 cmake command
  
 
