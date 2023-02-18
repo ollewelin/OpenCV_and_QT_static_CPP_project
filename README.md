@@ -37,7 +37,14 @@ The 'opencv_contrib' repository contains additional modules and functionality th
     ...
     ...
 
+
+
+I have NVIDIA GeForce GTX 1650 graphics card is based on the Turing architecture and supports CUDA compute capability 7.5
+
+CUDA_ARCH_BIN=7.5
+
 cmake command
+ 
 
     cmake -D CMAKE_BUILD_TYPE=RELEASE \
           -D CMAKE_INSTALL_PREFIX=/usr/local \
@@ -45,8 +52,8 @@ cmake command
           -D WITH_QT=ON \
           -D WITH_OPENGL=ON \
           -D WITH_CUDA=ON \
-          -D CUDA_ARCH_BIN=6.1 \
-          -D CUDA_ARCH_PTX=6.1 \
+          -D CUDA_ARCH_BIN=7.5 \
+          -D CUDA_ARCH_PTX=7.5 \
           -D CMAKE_BUILD_TYPE=DEBUG \
           -D CMAKE_CXX_FLAGS_DEBUG="-g" \
           ..
