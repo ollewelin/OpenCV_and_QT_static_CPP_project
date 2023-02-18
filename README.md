@@ -59,4 +59,6 @@ cmake command
           -D CUDA_ARCH_PTX=7.5 \
           -D CMAKE_BUILD_TYPE=DEBUG \
           -D CMAKE_CXX_FLAGS_DEBUG="-g" \
+          -D OPENCV_EXTRA_MODULES_PATH=/opencv_contrib/modules \
+          -D OPENCV_ENABLE_NONFREE=ON \
           ..
