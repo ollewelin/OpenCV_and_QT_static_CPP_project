@@ -25,6 +25,12 @@ Static QT and OpenCV C++ project
 Possible to call 
 
     cv::cuda 
+    
+### Additional opencv_contrib provides CUDA-specific functionality for OpenCV
+
+The 'opencv_contrib' repository contains additional modules and functionality that are not part of the main OpenCV distribution. The 'cudev' module provides CUDA-specific functionality for OpenCV.
+
+  git clone https://github.com/opencv/opencv_contrib.git
 
 cmake command
 
