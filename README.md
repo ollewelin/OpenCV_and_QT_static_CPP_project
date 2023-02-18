@@ -3,6 +3,12 @@ Static QT and OpenCV C++ project
 
 # 1. OpenCV installation for QT, OpenCV with debug and static 
 
+### OpenCV from source
+
+  git clone https://github.com/opencv/opencv
+
+
+
 
 ### CMake command
 
