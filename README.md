@@ -22,8 +22,11 @@ Static QT and OpenCV C++ project
           ..
 ### Or With OpenCV CUDA support 
 
+Possible to call 
+
     cv::cuda 
-    
+
+cmake command
 
     cmake -D CMAKE_BUILD_TYPE=RELEASE \
           -D CMAKE_INSTALL_PREFIX=/usr/local \
