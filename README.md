@@ -78,6 +78,8 @@ cmake command
           
           
 Example terminal view after cmake command
+    
+    
     ...
     ...
     
