@@ -76,6 +76,18 @@ https://developer.nvidia.com/cuda-downloads
     Built on Fri_Jan__6_16:45:21_PST_2023
     Cuda compilation tools, release 12.0, V12.0.140
     Build cuda_12.0.r12.0/compiler.32267302_0
+    
+### nano ~/.bashrc export PATH=$PATH:/usr/local/cuda/bin
+    
+    nano ~/.bashrc
+    
+    add line 
+    
+    export PATH=$PATH:/usr/local/cuda/bin
+    
+    CTRL o
+    CTRL x
+
 
 The 'opencv_contrib' repository contains additional modules and functionality that are not part of the main OpenCV distribution. The 'cudev' module provides CUDA-specific functionality for OpenCV.
    
