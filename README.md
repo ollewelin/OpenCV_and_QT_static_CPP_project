@@ -11,7 +11,7 @@ Static QT and OpenCV C++ project
 
 ### OpenCV from source
 
-  git clone https://github.com/opencv/opencv
+    git clone https://github.com/opencv/opencv
 
 
 
