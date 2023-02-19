@@ -13,6 +13,10 @@ Static QT and OpenCV C++ project
 
         sudo apt install git
 
+### Install cmake
+
+    sudo apt  install cmake        
+
 ### OpenCV from source
 
     git clone https://github.com/opencv/opencv
