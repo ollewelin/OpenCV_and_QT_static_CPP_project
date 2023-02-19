@@ -8,6 +8,7 @@ Static QT and OpenCV C++ project
     sudo apt update
     sudo apt upgrade
     sudo apt install qtcreator   
+    sudo apt-get install qtbase5-dev qt5-qmake qtcreator qtbase5-examples qtbase5-doc-html
 
 ### instal git
 
