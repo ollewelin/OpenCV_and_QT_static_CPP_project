@@ -3,6 +3,12 @@ Static QT and OpenCV C++ project
 
 # 1. OpenCV installation for QT, OpenCV with debug and static 
 
+## Instal Qtcreator
+
+    sudo apt update
+    sudo apt upgrade
+    sudo apt install qtcreator   
+
 ### OpenCV from source
 
   git clone https://github.com/opencv/opencv
