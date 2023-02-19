@@ -9,6 +9,10 @@ Static QT and OpenCV C++ project
     sudo apt upgrade
     sudo apt install qtcreator   
 
+### instal git
+
+        sudo apt install git
+
 ### OpenCV from source
 
     git clone https://github.com/opencv/opencv
@@ -19,10 +23,10 @@ Static QT and OpenCV C++ project
 ### CMake command without OpenCV CUDA 
   
   
-    /opencv$ cd opencv
-    /opencv/opencv$ mkdir build
-    /opencv/opencv$ cd build
-    /opencv/opencv/build$
+    $ cd opencv
+    /opencv$ mkdir build
+    /opencv$ cd build
+    /opencv/build$
 
     cmake -D CMAKE_BUILD_TYPE=RELEASE \
           -D CMAKE_INSTALL_PREFIX=/usr/local \
@@ -98,9 +102,9 @@ https://developer.nvidia.com/cuda-downloads
 The 'opencv_contrib' repository contains additional modules and functionality that are not part of the main OpenCV distribution. The 'cudev' module provides CUDA-specific functionality for OpenCV.
    
     
-    /opencv/opencv/build$ cd ..
+    /opencv/build$ cd ..
 
-    /opencv/opencv$ git clone https://github.com/opencv/opencv_contrib.git
+    /opencv$ git clone https://github.com/opencv/opencv_contrib.git
     cd opencv_contrib
     opencv/opencv_contrib$ git checkout 4.7.0
     Note: switching to '4.7.0'.
@@ -117,7 +121,7 @@ https://developer.nvidia.com/cuda-gpus
 cmake command
  
 
-    /opencv/opencv/build$
+    /opencv/build$
     
     cmake -D CMAKE_BUILD_TYPE=RELEASE \
           -D CMAKE_INSTALL_PREFIX=/usr/local \
@@ -167,11 +171,11 @@ Example terminal view after cmake command
     -- 
     -- Configuring done
     -- Generating done
-    -- Build files have been written to: /home/olle/opencv/opencv/build
-    ~/opencv/opencv/build$ 
+    -- Build files have been written to: /home/olle/opencv/build
+    ~/opencv/build$ 
     
 ## Compile OpenCV    
-    ~/opencv/opencv/build$ make
+    ~/opencv/build$ make
     
     
 
