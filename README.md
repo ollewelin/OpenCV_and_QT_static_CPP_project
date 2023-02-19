@@ -32,12 +32,53 @@ Possible to call
 
     cv::cuda 
     
-### Additional opencv_contrib provides CUDA-specific functionality for OpenCV
+# Additional opencv_contrib provides CUDA-specific functionality for OpenCV
 
-The 'opencv_contrib' repository contains additional modules and functionality that are not part of the main OpenCV distribution. The 'cudev' module provides CUDA-specific functionality for OpenCV.
+## Install CUDA toolkit
 
+https://developer.nvidia.com/cuda-downloads
+
+    Linux -> x86_64 -> Ubuntu -> 22.04 -> deb(local)
+  
+    ...
+    ...
+  
+    sudo reboot
+    
+    nvidia-smi
+    +-----------------------------------------------------------------------------+
+    | NVIDIA-SMI 525.85.12    Driver Version: 525.85.12    CUDA Version: 12.0     |
+    |-------------------------------+----------------------+----------------------+
+    | GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+    | Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+    |                               |                      |               MIG M. |
+    |===============================+======================+======================|
+    |   0  NVIDIA GeForce ...  Off  | 00000000:01:00.0 Off |                  N/A |
+    | N/A   37C    P8     3W /  50W |      6MiB /  4096MiB |      0%      Default |
+    |                               |                      |                  N/A |
+    +-------------------------------+----------------------+----------------------+
+                                                                                   
+    +-----------------------------------------------------------------------------+
+    | Processes:                                                                  |
+    |  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+    |        ID   ID                                                   Usage      |
+    |=============================================================================|
+    |    0   N/A  N/A      1792      G   /usr/lib/xorg/Xorg                  4MiB |
+    +-----------------------------------------------------------------------------+
 
     
+### NVCC not set permanet PATH
+    
+    export PATH=$PATH:/usr/local/cuda/bin
+    nvcc --version
+    nvcc: NVIDIA (R) Cuda compiler driver
+    Copyright (c) 2005-2023 NVIDIA Corporation
+    Built on Fri_Jan__6_16:45:21_PST_2023
+    Cuda compilation tools, release 12.0, V12.0.140
+    Build cuda_12.0.r12.0/compiler.32267302_0
+
+The 'opencv_contrib' repository contains additional modules and functionality that are not part of the main OpenCV distribution. The 'cudev' module provides CUDA-specific functionality for OpenCV.
+   
     
     /opencv/opencv/build$ cd ..
 
@@ -47,8 +88,6 @@ The 'opencv_contrib' repository contains additional modules and functionality th
     Note: switching to '4.7.0'.
     ...
     ...
-
-
 
 I have NVIDIA GeForce GTX 1650 graphics card is based on the Turing architecture and supports CUDA compute capability 7.5
 
