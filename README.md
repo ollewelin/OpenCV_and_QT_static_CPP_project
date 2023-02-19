@@ -179,8 +179,37 @@ Example terminal view after cmake command
     ~/opencv/build$ 
     
 ## Compile OpenCV    
+
+## ~/opencv/build$ make
     ~/opencv/build$ make
     
+    
+    ...
+    [ 99%] Building CXX object apps/interactive-calibration/CMakeFiles/opencv_interactive-calibration.dir/main.cpp.o
+    [ 99%] Building CXX object apps/interactive-calibration/CMakeFiles/opencv_interactive-calibration.dir/parametersController.cpp.o
+    [100%] Building CXX object apps/interactive-calibration/CMakeFiles/opencv_interactive-calibration.dir/rotationConverters.cpp.o
+    [100%] Linking CXX executable ../../bin/opencv_interactive-calibration
+    [100%] Built target opencv_interactive-calibration
+    [100%] Building CXX object apps/version/CMakeFiles/opencv_version.dir/opencv_version.cpp.o
+    [100%] Linking CXX executable ../../bin/opencv_version
+    [100%] Built target opencv_version
+    [100%] Building CXX object apps/model-diagnostics/CMakeFiles/opencv_model_diagnostics.dir/model_diagnostics.cpp.o
+    [100%] Linking CXX executable ../../bin/opencv_model_diagnostics
+    [100%] Built target opencv_model_diagnostics
+
+    
+ ## ~/opencv/build$ sudo make install    
+    
+    [100%] Built target opencv_model_diagnostics
+    olle@olle-TUF-Gaming-FX505DT-FX505DT:~/opencv/build$ sudo make install
+    [sudo] password for olle: 
+    -- Detected processor: x86_64
+    -- Could NOT find PythonInterp (missing: PYTHON_EXECUTABLE) (Required is at least version "2.7")
+    -- Looking for ccache - not found
+    ...
+    ...
+    
+ 
     
 
 
