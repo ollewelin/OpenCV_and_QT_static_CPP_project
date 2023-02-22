@@ -160,6 +160,17 @@ cmake command
           -D OPENCV_ENABLE_NONFREE=ON \
           ..
 
+Add
+
+        -D OPENCV_GENERATE_PKGCONFIG=ON
+
+## If you want to use pkg-config opencv in Makefile
+        
+        OPENCV = `pkg-config opencv --cflags --libs`
+        LIBS = $(OPENCV)
+
+
+
           
 Example terminal view after cmake command
     
