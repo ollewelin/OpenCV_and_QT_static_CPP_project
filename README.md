@@ -130,18 +130,16 @@ cmake command
 
     /opencv/build$
     
-    cmake -D CMAKE_BUILD_TYPE=RELEASE \
-          -D CMAKE_INSTALL_PREFIX=/usr/local \
+    cmake -D CMAKE_INSTALL_PREFIX=/usr/local \
           -D BUILD_SHARED_LIBS=OFF \
           -D WITH_QT=ON \
           -D WITH_OPENGL=ON \
-          -D WITH_CUDA=ON \
+          -D WITH_CUDA=OFF \
           -D CUDA_ARCH_BIN=7.5 \
           -D CUDA_ARCH_PTX=7.5 \
           -D CMAKE_BUILD_TYPE=DEBUG \
           -D CMAKE_CXX_FLAGS_DEBUG="-g" \
-          -D OPENCV_EXTRA_MODULES_PATH=../opencv_contrib/modules \
-          -D OPENCV_ENABLE_NONFREE=ON \
+          -D OPENCV_ENABLE_NONFREE=OFF \
           ..
 
 ## shared dynamic library 
